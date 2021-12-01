@@ -9,6 +9,9 @@ int N, M, A, B;
 vector <int> v;
 int main()
 {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
 	cin >> N;
 
 	for (int i = 0; i < N; i++)
@@ -23,9 +26,9 @@ int main()
 	for (int i = 0; i < M; i++)
 	{
 		cin >> B;
-		
+
 		int result = upper_bound(v.begin(), v.end(), B) - lower_bound(v.begin(), v.end(), B);
-		cout << result;
+		cout << result << " ";
 	}
 	return 0;
 }
